@@ -1,0 +1,124 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="./style/global.css">
+  <link rel="stylesheet" href="./style/bootstrap.css">
+  <link rel="stylesheet" href="./style/bootstrap-grid.css">
+  <link rel="stylesheet" href="./style/bootstrap-reboot.css">
+  <link rel="stylesheet" href="./style/login.css">
+
+  <script src="./js/my_js.js"></script>
+
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body style="background: #f5f5f5; font-family: IranSans">
+<!--[if IE]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade
+  your browser</a> to improve your experience and security.</p>
+<![endif]-->
+
+<!-- Add your site or application content here -->
+<script src="js/vendor/modernizr-{{MODERNIZR_VERSION}}.min.js"></script>
+<script src="https://code.jquery.com/jquery-{{JQUERY_VERSION}}.min.js" integrity="{{JQUERY_SRI_HASH}}"
+        crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-{{JQUERY_VERSION}}.min.js"><\/script>')</script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+
+<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+<script>
+  window.ga = function () {
+    ga.q.push(arguments)
+  };
+  ga.q = [];
+  ga.l = +new Date;
+  ga('create', 'UA-XXXXX-Y', 'auto');
+  ga('set', 'transport', 'beacon');
+  ga('send', 'pageview')
+</script>
+<script src="https://www.google-analytics.com/analytics.js" async defer></script>
+
+<nav class="navbar navbar-expand-sm fixed-top bg-navbar" id="main-navbar" style="">
+
+  <a class="navbar-brand col-2" style="text-align: right" id="brand">
+    <img src="./img/logo.png" class="rounded-circle" style="width: 40px;">
+    <span style="color: #4CB5F5; font-weight: bolder">    سامانه انتقادات و پیشنهادات شهیدبهشتی
+    </span>
+  </a>
+  <div class="col-lg-10">
+    <ul class="d-flex justify-content-end " style="height: 100%">
+      <li class=" nav-item-1" id="item1" onclick="makeItActive(this.id)">ورود به حساب کاربری</li>
+      <li class=" nav-item-1" id="item2" onclick="makeItActive(this.id)">ثبت نام</li>
+      <li class=" nav-item-1" id="item3" onclick="makeItActive(this.id)">خانه</li>
+    </ul>
+  </div>
+
+</nav>
+
+
+<div class="row" style="margin-top: 100px;">
+  <div class="entrance-style " id="register-state" style="background: white;width: 60%;height: 600px;">
+    <div class="" style="text-align: right;">
+      <form action="" style="">
+        <div class="form-group" style="margin-top: 5%" id="namediv">
+          <label style="margin-right: 10%" for="name"><b>نام و نام خانوادگی</b></label>
+          <div style="" class="div-input-each">
+            <input type="text" class="form-control1" id="name" name="name"
+                   style="text-align: right; float: left">
+            <img src="./img/person1.png" style="" class="person-icon">
+          </div>
+        </div>
+        <div class="form-group" style="margin-top: 5%" id="emaildiv">
+          <label style="margin-right: 10%;" for="email"><b>پست الکترونیک</b></label>
+          <div style="" class="div-input-each">
+            <input type="" class="form-control1" id="email" name="email"
+                   style="text-align: right; float: left">
+            <img src="./img/folder.png" style="" class="person-icon">
+          </div>
+        </div>
+        <div class="form-group" style="margin-top: 5%" id="passworddiv">
+          <label style="margin-right: 10%" for="psw"><b>رمز عبور</b></label>
+          <div style="" class="div-input-each">
+            <input type="password" class="form-control1" id="psw" name="password"
+                   style="text-align: right; float: left">
+            <img src="./img/password.png" style="" class="person-icon">
+          </div>
+        </div>
+        <div class="form-group" style="margin-top: 5%" id="passworddupdiv">
+          <label style="margin-right: 10%" for="dupPsw"><b>تکرار رمز عبور</b></label>
+          <div style="" class="div-input-each">
+            <input type="password" class="form-control1" id="dupPsw" name="passworddup"
+                   style="text-align: right; float: left">
+            <img src="./img/password.png" style="" class="person-icon">
+          </div>
+        </div>
+        <br>
+        <button type="button" class="btn-register" style="background-color: var(--background-icon-green); "
+                onclick="validationOfEmail(),validationOfPassword(),validationOfPasswordDup(),validationName()">
+          ثبت نام
+        </button>
+        <br>
+        <button type="button" class="btn-register" style="background-color: red;">ثبت نام با حساب کاربری گوگل</button>
+        <br>
+        <br>
+      </form>
+    </div>
+  </div>
+</div>
+</body>
+
+</html>

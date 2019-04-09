@@ -1,0 +1,42 @@
+:root {
+  --white-drak: #C6C6C6;
+  --background-icon-green: #3c9445;
+  --height-entrance: 400px;
+}
+
+@font-face {
+  font-family: 'IranSans';
+  src: url('fonts/IRANSans.ttf');
+}
+
+.bg-navbar {
+  background: #34675C;
+}
+
+.nav-item-1{
+  color: #B3C100;
+  font-weight: bolder;
+  text-align: center;
+  list-style-type: none;
+  margin-top: 5px;
+  padding: 0rem 1.5rem 0rem 1.5rem;
+  align-content: center;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+#item3{
+  margin-right: 10px;
+}
+
+.nav-item-1:hover {
+  background-color: #2d8a7a;
+}
+
+.nav-item-1-active {
+  background-color: #2d8a7a;
+}
+
+.link-nav :hover{
+  background-color: white;
+}
