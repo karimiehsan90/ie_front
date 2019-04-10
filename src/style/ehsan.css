@@ -1,0 +1,120 @@
+.card-white {
+    background: white;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.mt-10 {
+    margin-top: 14%;
+}
+
+.ml-10 {
+    margin-left: 10%;
+}
+
+.dir-rtl {
+    direction: rtl;
+}
+
+.dir-ltr {
+    direction: ltr;
+}
+
+.ul-wo-bullet {
+    list-style-type: none;
+}
+
+.urls.active {
+    color: #4CB5F5;
+}
+
+.urls:hover {
+    cursor: pointer;
+    background-color: #ccc;
+}
+
+
+.entrance-style-filters {
+    text-align: center;
+    box-shadow: -1px 0px 10px 3px #bebebe;
+}
+
+.font-size-400 {
+    font-size: 100%;
+}
+
+.color-green {
+    color: green;
+}
+
+.fa-filter:hover {
+    cursor: pointer;
+}
+
+thead {
+    background-color: rgb(235, 239, 242);
+}
+
+.fa-bars {
+    font-size: 150%;
+    color: #4CB5F5;
+}
+
+.fa-bars:hover{
+    cursor: pointer;
+}
+
+.side-nav {
+    position: absolute;
+    background-color: white;
+    height: 100%;
+    width: 50%;
+    right: 0;
+    top: 0;
+    z-index: 1031;
+}
+
+.avatar {
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.hover-pointer {
+    cursor: pointer;
+}
+
+.close-side {
+    background-color: white;
+    color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+@media all and (min-width: 992px){
+    .side-nav {
+        display: none;
+    }
+}
+
+@media all and (min-width: 992px){
+    .fa-filter {
+        font-size: 300%;
+    }
+}
+
+@media all and (max-width: 992px) and (min-width: 768px) {
+    .fa-filter {
+        font-size: 200%;
+    }
+}
+
+@media all and (max-width: 768px){
+    .fa-filter {
+        font-size: 100%;
+    }
+}
