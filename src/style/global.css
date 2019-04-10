@@ -13,16 +13,14 @@
   background: #34675C;
 }
 
-.nav-item-1{
+.nav-item-1 {
+
   color: #B3C100;
   font-weight: bolder;
   text-align: center;
   list-style-type: none;
-  margin-top: 5px;
-  padding: 0rem 1.5rem 0rem 1.5rem;
-  align-content: center;
-  text-align: center;
-  margin-bottom: 0;
+  height: 100%;
+  justify-content: center;
 }
 
 #item3{
