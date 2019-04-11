@@ -13,6 +13,16 @@
   color: var(--stone);
 }
 
+.entrance-style{
+  height: var(--height-entrance);
+  text-align: center;
+  box-shadow: -1px 0px 10px 3px #bebebe;
+  background: var(--dark-white);
+  width: 50%;
+  height: 650px;
+  color: var(--stone);
+}
+
 .form-style{
   margin-top: 5%;
   margin-right: 10%
@@ -87,6 +97,10 @@
 
   width: 5%;
   margin-right: 10%;
+}
+
+.text-blue{
+  color: var(--stone);
 }
 
 .div-input-each{

@@ -46,7 +46,7 @@
 }
 
 .nav-item-1-active {
-  background-color: #2d8a7a;
+  background-color: var(--shadow-hover);
 }
 
 .link-nav :hover{

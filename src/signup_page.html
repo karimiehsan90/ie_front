@@ -18,11 +18,15 @@
   <link rel="stylesheet" href="./style/bootstrap-grid.css">
   <link rel="stylesheet" href="./style/bootstrap-reboot.css">
   <link rel="stylesheet" href="./style/login.css">
+  <link rel="stylesheet" href="../style/ehsan.css">
+
 
   <script src="./js/my_js.js"></script>
+  <script src="../js/ehsan.js">
 
 
-  <meta name="theme-color" content="#fafafa">
+
+    <meta name="theme-color" content="#fafafa">
 </head>
 
 <body style="background: #f5f5f5; font-family: IranSans">
@@ -52,22 +56,43 @@
 </script>
 <script src="https://www.google-analytics.com/analytics.js" async defer></script>
 
-<div class="navbar navbar-expand-sm fixed-top bg-navbar" id="main-navbar" style="">
+<nav class="navbar navbar-expand-sm fixed-top bg-navbar d-md-block" id="main-navbar-md">
+  <div class="row w-100">
+    <div class="col-4">
+      <a class="navbar-brand col-2" style="text-align: right" id="brand-md">
+        <img src="./img/logo-criticizing-2.png" class="rounded-circle" style="width: 40px;">
+        <span class="brand-navbar">
+                    سامانه انتقادات و پیشنهادات شهیدبهشتی
+                </span>
+      </a>
+    </div>
+    <div class="col-6"></div>
+    <div class="col-2 fa fa-bars text-right ml-auto mt-1"></div>
+  </div>
 
-  <a class="navbar-brand col-2" style="text-align: right" id="brand">
-    <img src="./img/logo-criticizing-2.png" class="rounded-circle" style="width: 40px;">
-    <span style="" class="brand-navbar">    سامانه انتقادات و پیشنهادات شهیدبهشتی
-    </span>
-  </a>
-  <div class="col-lg-10">
-    <div class="d-flex justify-content-end">
-      <div class="p-2 nav-item-1" id="item1" onclick="makeItActive(this.id)">ورود به حساب کاربری</div>
-      <div class="p-2 nav-item-1" id="item2" onclick="makeItActive(this.id)">ثبت نام</div>
-      <div class="p-2 nav-item-1" id="item3" onclick="makeItActive(this.id)">خانه</div>
+</nav>
+
+
+<nav class="navbar navbar-expand-sm fixed-top bg-navbar d-none d-md-block" id="main-navbar">
+  <div class="row">
+    <div class="col-4">
+      <a class="navbar-brand col-2" style="text-align: right" id="brand">
+        <img src="./img/logo-criticizing-2.png" class="rounded-circle" style="width: 40px;">
+        <span class="brand-navbar">
+                    سامانه انتقادات و پیشنهادات شهیدبهشتی
+                </span>
+      </a>
+    </div>
+    <div class="col-8">
+      <ul class="d-flex justify-content-end " style="height: 100%">
+        <li class="p-2 nav-item-1" id="item1" onclick="makeItActive(this.id)">ورود به حساب کاربری</li>
+        <li class="p-2 nav-item-1" id="item2" onclick="makeItActive(this.id)">ثبت نام</li>
+        <li class="p-2 nav-item-1" id="item3" onclick="makeItActive(this.id)">خانه</li>
+      </ul>
     </div>
   </div>
 
-</div>
+</nav>
 
 
 <div class="row" style="margin-top: 100px">
@@ -119,7 +144,7 @@
         <button type="button" class="btn-register" style="background-color: var(--stone);">
           ثبت نام با حساب کاربری گوگل</button>
         <br>
-        <br>
+        <span class="text-blue">بازگشت به ورود</span><img src="./img/rewind.png" class="person-icon" onclick="">
       </form>
     </div>
   </div>
