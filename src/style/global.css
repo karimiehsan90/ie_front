@@ -2,6 +2,13 @@
   --white-drak: #C6C6C6;
   --background-icon-green: #3c9445;
   --height-entrance: 400px;
+
+  --shadow: #2A3132;
+  --shadow-hover: #3e4647;
+  --mist: #90AFC5;
+  --stone: #336B87;
+  --autmn-foliage: #763626;
+
 }
 
 @font-face {
@@ -10,12 +17,12 @@
 }
 
 .bg-navbar {
-  background: #34675C;
+  background: var(--shadow);
 }
 
 .nav-item-1 {
 
-  color: #B3C100;
+  color: var(--mist);
   font-weight: bolder;
   text-align: center;
   list-style-type: none;
@@ -28,7 +35,12 @@
 }
 
 .nav-item-1:hover {
-  background-color: #2d8a7a;
+  background-color: var(--shadow-hover);
+}
+
+.brand-navbar{
+  color: var(--stone);
+  font-weight: bolder;
 }
 
 .nav-item-1-active {
