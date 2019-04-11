@@ -55,7 +55,7 @@
 <div class="navbar navbar-expand-sm fixed-top bg-navbar" id="main-navbar" style="">
 
   <a class="navbar-brand col-2" style="text-align: right" id="brand">
-    <img src="./img/logo.png" class="rounded-circle" style="width: 40px;">
+    <img src="./img/logo-criticizing-2.png" class="rounded-circle" style="width: 40px;">
     <span style="" class="brand-navbar">    سامانه انتقادات و پیشنهادات شهیدبهشتی
     </span>
   </a>
@@ -70,54 +70,60 @@
 </div>
 
 
-<div class="row" style="margin-top: 100px;">
-  <div class="entrance-style " id="register-state" style="background: white;width: 60%;height: 600px;">
+<div class="row" style="margin-top: 100px">
+  <div class="col-lg-3"></div>
+  <div class="entrance-style col-lg-6" id="register-state">
     <div class="" style="text-align: right;">
       <form action="" style="">
-        <div class="form-group" style="margin-top: 5%" id="namediv">
-          <label style="margin-right: 10%" for="name"><b>نام و نام خانوادگی</b></label>
-          <div style="" class="div-input-each">
-            <input type="text" class="form-control1" id="name" name="name"
-                   style="text-align: right; float: left">
-            <img src="./img/person1.png" style="" class="person-icon">
+
+        <div class="form-group" id="namediv">
+          <label class="form-style" for="name"><b>نام و نام خانوادگی</b></label>
+          <div class="div-input-each">
+            <input type="text" class="form-control1" id="name" name="name">
+            <img src="./img/person1.png"  class="person-icon">
           </div>
         </div>
-        <div class="form-group" style="margin-top: 5%" id="emaildiv">
-          <label style="margin-right: 10%;" for="email"><b>پست الکترونیک</b></label>
-          <div style="" class="div-input-each">
-            <input type="" class="form-control1" id="email" name="email"
-                   style="text-align: right; float: left">
-            <img src="./img/folder.png" style="" class="person-icon">
+
+        <div class="form-group" id="emaildiv">
+          <label class="form-style" for="email"><b>پست الکترونیک</b></label>
+          <div class="div-input-each">
+            <input type="" class="form-control1" id="email" name="email">
+            <img src="./img/folder.png" class="person-icon">
           </div>
         </div>
-        <div class="form-group" style="margin-top: 5%" id="passworddiv">
-          <label style="margin-right: 10%" for="psw"><b>رمز عبور</b></label>
-          <div style="" class="div-input-each">
-            <input type="password" class="form-control1" id="psw" name="password"
-                   style="text-align: right; float: left">
+
+        <div class="form-group" id="passworddiv">
+          <label class="form-style" for="psw"><b>رمز عبور</b></label>
+          <div class="div-input-each">
+            <input type="password" class="form-control1" id="psw" name="password">
             <img src="./img/password.png" style="" class="person-icon">
           </div>
         </div>
-        <div class="form-group" style="margin-top: 5%" id="passworddupdiv">
-          <label style="margin-right: 10%" for="dupPsw"><b>تکرار رمز عبور</b></label>
-          <div style="" class="div-input-each">
-            <input type="password" class="form-control1" id="dupPsw" name="passworddup"
-                   style="text-align: right; float: left">
-            <img src="./img/password.png" style="" class="person-icon">
+
+        <div class="form-group" id="passworddupdiv">
+          <label class="form-style" for="dupPsw"><b>تکرار رمز عبور</b></label>
+          <div class="div-input-each">
+            <input type="password" class="form-control1" id="dupPsw" name="passworddup">
+            <img src="./img/password.png" class="person-icon">
           </div>
         </div>
+
         <br>
-        <button type="button" class="btn-register" style="background-color: var(--background-icon-green); "
+
+        <button type="button" class="btn-register" style="background-color: var(--mist); "
                 onclick="validationOfEmail(),validationOfPassword(),validationOfPasswordDup(),validationName()">
-          ثبت نام
-        </button>
+          ثبت نام</button>
+
         <br>
-        <button type="button" class="btn-register" style="background-color: red;">ثبت نام با حساب کاربری گوگل</button>
+
+        <button type="button" class="btn-register" style="background-color: var(--stone);">
+          ثبت نام با حساب کاربری گوگل</button>
         <br>
         <br>
       </form>
     </div>
   </div>
+  <div class="col-lg-3"></div>
 </div>
 </body>
 

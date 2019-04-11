@@ -7,10 +7,17 @@
   height: var(--height-entrance);
   text-align: center;
   box-shadow: -1px 0px 10px 3px #bebebe;
+  background: var(--dark-white);
+  width: 50%;
+  height: 650px;
+  color: var(--stone);
 }
-.font-enterance {
-  color: white;
+
+.form-style{
+  margin-top: 5%;
+  margin-right: 10%
 }
+
 .arrow-style {
   padding: 5px;
   width: 30px;
@@ -32,13 +39,15 @@
   background-color: white;
   border-bottom-color: #a3a3a3;
   border-bottom-style: solid;
+  text-align: right;
+  float: left;
 }
 .form-control-error1 {
   border-bottom-color: red;
 }
 
 .form-control1:focus {
-  border-bottom-color: mediumseagreen;
+  border-bottom-color: var(--mist);
   border-bottom-style: solid;
 }
 
@@ -49,7 +58,7 @@
   border-radius: 0.25rem;
 
   font-weight: 400;
-  color: white;
+  color: var(--shadow);
   text-align: center;
   vertical-align: middle;
   border: 1px solid transparent;
@@ -59,7 +68,6 @@
   line-height: 1.5;
   border-radius: 0.25rem;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-
 }
 
 .error-massage {
@@ -76,7 +84,8 @@
 }
 
 .person-icon {
-  width: 7%;
+
+  width: 5%;
   margin-right: 10%;
 }
 
