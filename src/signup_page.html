@@ -22,11 +22,10 @@
 
 
   <script src="./js/my_js.js"></script>
-  <script src="../js/ehsan.js">
+  <script src="../js/ehsan.js"></script>
 
 
-
-    <meta name="theme-color" content="#fafafa">
+  <meta name="theme-color" content="#fafafa">
 </head>
 
 <body style="background: #f5f5f5; font-family: IranSans">
@@ -105,7 +104,7 @@
           <label class="form-style" for="name"><b>نام و نام خانوادگی</b></label>
           <div class="div-input-each">
             <input type="text" class="form-control1" id="name" name="name">
-            <img src="./img/person1.png"  class="person-icon">
+            <img src="./img/person1.png" class="person-icon">
           </div>
         </div>
 
@@ -116,6 +115,7 @@
             <img src="./img/folder.png" class="person-icon">
           </div>
         </div>
+
 
         <div class="form-group" id="passworddiv">
           <label class="form-style" for="psw"><b>رمز عبور</b></label>
@@ -133,16 +133,33 @@
           </div>
         </div>
 
+        <div class="form-group">
+          <label class="form-style">نقش خود را وارد کنید </label>
+          <select  class="form-control">
+            <option id="student">
+              دانشجو
+            </option>
+            <option id="teacher">
+              استاد
+            </option>
+            <option id="other">
+              سایر
+            </option>
+          </select>
+        </div>
+
         <br>
 
         <button type="button" class="btn-register" style="background-color: var(--mist); "
                 onclick="validationOfEmail(),validationOfPassword(),validationOfPasswordDup(),validationName()">
-          ثبت نام</button>
+          ثبت نام
+        </button>
 
         <br>
 
         <button type="button" class="btn-register" style="background-color: var(--stone);">
-          ثبت نام با حساب کاربری گوگل</button>
+          ثبت نام با حساب کاربری گوگل
+        </button>
         <br>
         <span class="text-blue">بازگشت به ورود</span><img src="./img/rewind.png" class="person-icon" onclick="">
       </form>

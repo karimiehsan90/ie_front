@@ -92,3 +92,22 @@ function validationName() {
     removeAlert("namediv", "error-name-div");
   }
 }
+
+function openTextField() {
+  var textBox = document.getElementById("select-user");
+  textBox.style.display = 'block';
+
+  var button = document.getElementById("send-btn");
+  button.disabled = false;
+
+}
+
+
+function closeTextField() {
+  var textBox = document.getElementById("select-user");
+  textBox.style.display = 'none';
+
+  var button = document.getElementById("send-btn");
+  button.disabled = false;
+}
+

@@ -3,27 +3,18 @@
   src: url('fonts/IRANSans.ttf');
 }
 
-.entrance-style{
+
+.entrance-style {
   height: var(--height-entrance);
   text-align: center;
   box-shadow: -1px 0px 10px 3px #bebebe;
   background: var(--dark-white);
   width: 50%;
-  height: 650px;
+  height: 800px;
   color: var(--stone);
 }
 
-.entrance-style{
-  height: var(--height-entrance);
-  text-align: center;
-  box-shadow: -1px 0px 10px 3px #bebebe;
-  background: var(--dark-white);
-  width: 50%;
-  height: 650px;
-  color: var(--stone);
-}
-
-.form-style{
+.form-style {
   margin-top: 5%;
   margin-right: 10%
 }
@@ -51,6 +42,10 @@
   border-bottom-style: solid;
   text-align: right;
   float: left;
+}
+
+.form-control2{
+  margin-right: 10%;
 }
 .form-control-error1 {
   border-bottom-color: red;
