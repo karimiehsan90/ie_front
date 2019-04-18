@@ -99,9 +99,7 @@ thead {
     .side-nav {
         display: none;
     }
-}
 
-@media all and (min-width: 992px){
     .fa-filter {
         font-size: 300%;
     }
@@ -113,8 +111,22 @@ thead {
     }
 }
 
-@media all and (max-width: 768px){
+@media all and (max-width: 768px) and (min-width: 200px){
+    .fa-filter {
+        font-size: 150%;
+    }
+}
+
+@media all and (max-width: 200px) {
     .fa-filter {
         font-size: 100%;
     }
+}
+
+.loading-mode {
+
+}
+
+.z-100 {
+    z-index: 100;
 }
