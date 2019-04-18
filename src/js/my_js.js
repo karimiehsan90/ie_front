@@ -111,3 +111,13 @@ function closeTextField() {
   button.disabled = false;
 }
 
+function changeToDateTypeFrom() {
+  var x = document.getElementById('from-date');
+  x.type = 'date';
+}
+
+function changeToDateTypeTo() {
+  var x = document.getElementById('to-date');
+  x.type = 'date';
+}
+
