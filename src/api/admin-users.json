@@ -1,0 +1,54 @@
+{
+  "status": true,
+  "message": null,
+  "data": {
+    "manages": [
+      {
+        "name": "تست",
+        "username": "asdfg",
+        "post": "دانشجو",
+        "id": 1
+      },
+      {
+        "name": "تست",
+        "username": "asdfg",
+        "post": "دانشجو",
+        "id": 2
+      },
+      {
+        "name": "تست",
+        "username": "asdfg",
+        "post": "دانشجو",
+        "id": 3
+      },
+      {
+        "name": "تست",
+        "username": "asdfg",
+        "post": "دانشجو",
+        "id": 4
+      }
+    ],
+    "accepts": [
+      {
+        "name": "تست",
+        "username": "asdfg",
+        "id": 1
+      },
+      {
+        "name": "تست",
+        "username": "asdfg",
+        "id": 2
+      },
+      {
+        "name": "تست",
+        "username": "asdfg",
+        "id": 3
+      },
+      {
+        "name": "تست",
+        "username": "asdfg",
+        "id": 4
+      }
+    ]
+  }
+}

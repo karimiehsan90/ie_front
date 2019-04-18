@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>موردها</title>
+    <title>ثبت مورد جدید</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -37,8 +37,8 @@
     <div class="row w-100">
         <div class="col-4">
             <a class="navbar-brand col-2" style="text-align: right" id="brand-md">
-              <img src="../img/logo-criticizing-2.png" class="rounded-circle" style="width: 40px;">
-              <span class="brand-navbar">
+                <img src="../img/logo-criticizing-2.png" class="rounded-circle" style="width: 40px;">
+                <span class="brand-navbar">
                     سامانه انتقادات و پیشنهادات شهیدبهشتی
                 </span>
             </a>
@@ -78,7 +78,7 @@
         <img src="../img/img_avatar.png" alt="Avatar" class="avatar">
     </div>
     <div class="mt-2">
-    احسان کریمی
+        احسان کریمی
     </div>
     <div class="logout mt-2 hover-pointer">
         خروج
@@ -90,16 +90,13 @@
     <div class="mt-2">
         <ul class="ul-wo-bullet">
             <li class="mb-2 mt-2 urls">
-                تایید و مدیریت کاربران
+                ویرایش پروفایل
             </li>
             <li class="mb-2 active urls">
-                موردها
+                افزودن مورد
             </li>
             <li class="mb-2 urls">
-                گزارشات
-            </li>
-            <li class="mb-2 urls">
-                موارد ارجاع شده به من
+                موارد ثبت شده من
             </li>
         </ul>
     </div>
@@ -111,127 +108,62 @@
     <div class="col-sm-3 entrance-style-filters col-3 card-white ml-3 d-none d-md-block">
         <ul class="ul-wo-bullet">
             <li class="mb-2 mt-2 urls">
-                تایید و مدیریت کاربران
+                ویرایش پروفایل
             </li>
             <li class="mb-2 active urls">
-            موردها
+                افزودن مورد
             </li>
             <li class="mb-2 urls">
-            گزارشات
-            </li>
-            <li class="mb-2 urls">
-            موارد ارجاع شده به من
+                موارد ثبت شده من
             </li>
         </ul>
     </div>
     <div class="col-sm-8 entrance-style-filters card-white col-8 mx-auto loading-mode" id="register-state">
         <div class="spinner-border text-success position-absolute mt-10 z-100 d-none"></div>
-        <div class="row mb-2">
-            <div class="col-5">
-                <div class="form-group">
-                    <label for="user_from">فرستنده: </label>
-                    <select id="user_from" class="form-control">
-                        <option value="1">
-                            تست 1
-                        </option>
-                        <option value="2">
-                            تست 2
-                        </option>
-                        <option value="3">
-                            تست 3
-                        </option>
+        <div class="row w-100">
+            <div class="col-lg-4 col-sm-12">
+                <div class="form-group mr-2">
+                    <label for="title">عنوان: </label>
+                    <input type="text" name="title" id="title" class="form-control">
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-12">
+                <div class="form-group mr-2">
+                    <label for="to">مربوط به: </label>
+                    <select class="form-control" name="to" id="to">
+                        <option>تست1</option>
+                        <option>تست2</option>
+                        <option>تست3</option>
                     </select>
                 </div>
             </div>
-            <div class="col-5">
-                <div class="form-group">
-                    <label for="user_to">گیرنده: </label>
-                    <select id="user_to" class="form-control">
-                        <option value="1">
-                            تست 1
-                        </option>
-                        <option value="2">
-                            تست 2
-                        </option>
-                        <option value="3">
-                            تست 3
-                        </option>
+            <div class="col-lg-4 col-sm-12">
+                <div class="form-group mr-2 ml-2">
+                    <label for="importance">اهمیت: </label>
+                    <select class="form-control" name="to" id="importance">
+                        <option>زیاد</option>
+                        <option>متوسط</option>
+                        <option>کم</option>
                     </select>
                 </div>
             </div>
-            <div class="col-1 fa fa-filter mt-3 color-green">
+        </div>
+        <div class="row w-100">
+            <div class="form-group mr-2 ml-2 w-100">
+                <label for="text">متن: </label>
+                <textarea class="form-control" name="text" id="text" rows="10"></textarea>
             </div>
         </div>
-
-
-        <div class="container mt-3 dir-rtl table-responsive">
-            <table class="table table-striped table-bordered">
-                <thead>
-                    <tr>
-                        <td>
-                            #
-                        </td>
-                        <td>
-                            عنوان
-                        </td>
-                        <td>
-                            وضعیت
-                        </td>
-                        <td>
-                            گیرنده
-                        </td>
-                        <td>
-                            فرستنده
-                        </td>
-                        <td>
-                            تاریخ ایجاد
-                        </td>
-                        <td>
-                            آخرین پاسخ
-                        </td>
-                        <td>
-                            تعداد پاسخ
-                        </td>
-                    </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <td>
-                        1
-                    </td>
-                    <td>
-                        تست
-                    </td>
-                    <td>
-                        تست
-                    </td>
-                    <td>
-                        خودم
-                    </td>
-                    <td>
-                        خودم
-                    </td>
-                    <td>
-                        1398/1/20
-                    </td>
-                    <td>
-                        1398/1/20
-                    </td>
-                    <td>
-                        2
-                    </td>
-                </tr>
-
-                </tbody>
-            </table>
+        <div class="row w-100">
+            <div class="form-group mr-2 ml-2 w-100">
+                <label for="file">فایل: </label>
+                <input type="file" class="form-control" name="file" id="file">
+            </div>
         </div>
-        <div class="container mt-3 dir-ltr">
-            <ul class="pagination">
-                <li class="page-item page-link back-shadow active">1</li>
-                <li class="page-item page-link back-shadow">2</li>
-                <li class="page-item page-link back-shadow">3</li>
-                <li class="page-item page-link back-shadow">4</li>
-            </ul>
+        <div class="row w-100">
+            <div class="form-group mr-2 ml-2 w-100">
+                <button class="btn btn-bg-shadow w-100">ثبت</button>
+            </div>
         </div>
     </div>
 </div>

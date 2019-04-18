@@ -27,7 +27,7 @@
 }
 
 .urls.active {
-    color: #4CB5F5;
+    color: var(--stone);
 }
 
 .urls:hover {
@@ -46,7 +46,7 @@
 }
 
 .color-green {
-    color: green;
+    color: var(--stone);
 }
 
 .fa-filter:hover {
@@ -67,7 +67,7 @@ thead {
 }
 
 .side-nav {
-    position: absolute;
+    position: fixed;
     background-color: white;
     height: 100%;
     width: 50%;
@@ -129,4 +129,45 @@ thead {
 
 .z-100 {
     z-index: 100;
+}
+
+.back-shadow {
+    background-color: var(--shadow);
+    color: white;
+}
+
+.back-shadow.active {
+    background-color: var(--stone);
+}
+
+.back-shadow:hover {
+    cursor: pointer;
+    color: white;
+    background-color: var(--shadow-hover);
+}
+
+.btn-bg-shadow {
+    background-color: var(--shadow);
+    color: white;
+}
+
+.btn-bg-shadow:hover {
+    color: white;
+}
+
+.btn-bg-stone {
+    background-color: var(--stone);
+    color: white;
+}
+
+.btn-bg-stone:hover {
+    color: white;
+}
+
+.bg-hover-red:hover {
+    color: red;
+}
+
+.bg-hover-green:hover {
+    color: green;
 }
