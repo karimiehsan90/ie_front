@@ -10,7 +10,7 @@
   line-height: 1.5;
   border-style: none;
   outline: none;
-  background-color: white;
+  background-color: var(--d6);
   border-bottom-color: #a3a3a3;
   border-bottom-style: solid;
   text-align: right;
