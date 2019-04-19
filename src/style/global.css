@@ -58,7 +58,7 @@
 }
 .myfrm .form-check-label{
   position: relative;
-  left: 90px;
+  right: 90px;
   width: 360px;
   margin: 0 !important;
 }

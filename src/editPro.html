@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html dir="rtl">
 <head>
-	<link rel="stylesheet" href="style/bootstrap-rtl.min.css">
+	<link rel="stylesheet" href="style/bootstrap.css">
 	<link rel="stylesheet" href="style/global.css">
+	<link rel="stylesheet" href="style/ehsan.css">
+    <link rel="stylesheet" href="./style/bootstrap-grid.css">
+    <link rel="stylesheet" href="./style/bootstrap-reboot.css">
 	<script src="js/jquery.min.js"></script>
 	<script src="js/popper.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body>
-<nav class="navbar navbar-expand-sm sticky-top bg-navbar d-md-none" id="main-navbar-md">
+<body><nav class="navbar navbar-expand-sm sticky-top bg-navbar d-md-none" id="main-navbar-md">
     <div class="row w-100">
         <div class="col-4">
             <a class="navbar-brand col-2" style="text-align: right" id="brand-md">
@@ -46,17 +48,18 @@
 
 </nav>
 
-	<div class="container">
+
+<div class="container">
 		 <form class="myfrm">
 		 	<div v-if="data.type==0" class="form-inline my-3">
                 <div class="col-sm-6 float-left">
-                    <label class="small mx-3 float-left">کاربری نام<span class="text-danger">*</span></label>
+                    <label class="small mx-3 float-right">کاربری نام<span class="text-danger">*</span></label>
                     <input type="text" class="form-control form-control-sm"
                            v-model.trim="$v.data.first_name.$model"
                            :class="{'error': $v.data.first_name.$error}"/>
                 </div>
                 <div class="col-sm-6 float-right my-3 my-sm-2">
-                    <label class="small mx-3 float-left">رمز عبور<span class="text-danger">*</span></label>
+                    <label class="small mx-3 float-right">رمز عبور<span class="text-danger">*</span></label>
                     <input type="text" class="form-control form-control-sm"
                            v-model.trim="$v.data.last_name.$model"
                            :class="{'error': $v.data.last_name.$error}"/>
@@ -65,13 +68,13 @@
             <hr class="d-none d-sm-block">
             <div v-if="data.type==0" class="form-inline my-3">
                 <div class="col-sm-6 float-left">
-                    <label class="small mx-3 float-left">&nbsp; &nbsp; نام<span class="text-danger">*</span></label>
+                    <label class="small mx-3 float-right">&nbsp; &nbsp; نام<span class="text-danger">*</span></label>
                     <input type="text" class="form-control form-control-sm"
                            v-model.trim="$v.data.first_name.$model"
                            :class="{'error': $v.data.first_name.$error}"/>
                 </div>
                 <div class="col-sm-6 float-right my-3 my-sm-2">
-                    <label class="small mx-3 float-left">نام خانوادگی<span class="text-danger">*</span></label>
+                    <label class="small mx-3 float-right">نام خانوادگی<span class="text-danger">*</span></label>
                     <input type="text" class="form-control form-control-sm"
                            v-model.trim="$v.data.last_name.$model"
                            :class="{'error': $v.data.last_name.$error}"/>
@@ -79,12 +82,12 @@
             </div>
             <div v-if="data.type==0" class="form-inline my-3">
                 <div class="col-sm-6 float-left">
-                    <label class="small mx-3 float-left">کد ملی<span class="text-danger">*</span></label>
+                    <label class="small mx-3 float-right">کد ملی<span class="text-danger">*</span></label>
                     <input type="text" class="form-control form-control-sm" v-model.trim="$v.data.melli_code.$model"
                            :class="{'error': $v.data.melli_code.$error}">
                 </div>
                 <div class="col-sm-6 float-right my-3 my-sm-2">
-                    <label class="small mx-3 float-left">کد دانشجویی<span class="text-danger">*</span></label>
+                    <label class="small mx-3 float-right">کد دانشجویی<span class="text-danger">*</span></label>
                     <input type="text" class="form-control form-control-sm" v-model.trim="$v.data.melli_code.$model"
                            :class="{'error': $v.data.melli_code.$error}">
                 </div>
@@ -92,24 +95,24 @@
             <hr class="d-none d-sm-block">
             <div class="form-inline my-3">
                 <div Mask="Number" class="col-sm-6 float-left">
-                    <label class="small mx-3 float-left">موبایل<span class="text-danger">*</span></label>
+                    <label class="small mx-3 float-right">موبایل<span class="text-danger">*</span></label>
                     <input class="form-control form-control-sm" type="text" v-model.trim="$v.data.mobile.$model"
                            :class="{'error': $v.data.mobile.$error}">
                 </div>
                 <div Mask="Number" class="col-sm-6 float-right my-3 my-sm-2">
-                    <label class="small mx-3 float-left">تلفن ثابت<span class="text-danger">*</span></label>
+                    <label class="small mx-3 float-right">تلفن ثابت<span class="text-danger">*</span></label>
                     <input class="form-control form-control-sm" type="text" v-model.trim="$v.data.telephone.$model"
                            :class="{'error': $v.data.telephone.$error}">
                 </div>
             </div>
             <div class="form-inline my-3">
                 <div IsLtr="true" class="col-sm-6 float-left">
-                    <label class="small mx-3 float-left">ایمیل<span class="text-danger">*</span></label>
+                    <label class="small mx-3 float-right">ایمیل<span class="text-danger">*</span></label>
                     <input type="email" class="form-control form-control-sm" v-model.trim="$v.data.email.$model"
                            :class="{'error': $v.data.email.$error}">
                 </div>
                 <div Mask="Number" MinLen="10" class="col-sm-6 float-right my-3 my-sm-2">
-                    <label class="small mx-3 float-left">کد پستی</label>
+                    <label class="small mx-3 float-right">کد پستی</label>
                     <input class="form-control-sm form-control" type="text" maxlength="10" v-model.trim="$v.data.postal_code.$model"
                            :class="{'error': $v.data.postal_code.$error}">
                 </div>
@@ -117,7 +120,7 @@
             <br class="d-sm-inline d-none">   
             <div class="form-inline my-3" dir="ltr" >
                 		
-                <div class=" mx-sm-auto mr-3 mr-sm-0" >
+                <div class=" mx-sm-auto ml-3 mr-sm-0" >
                     	<input class="form-control form-control-sm" type="hidden" name="_token" :value="Laravel.csrfToken">
                     	<button class="btn btn-success text-white btn-sm" type="submit">ثبت تغییرات</button>
             	</div>
