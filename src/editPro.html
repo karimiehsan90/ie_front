@@ -1,15 +1,51 @@
 <!DOCTYPE html>
 <html dir="rtl">
 <head>
-	<link rel="stylesheet" href="Bootstrap4/BS4/css/bootstrap-rtl.min.css">
-	<link rel="stylesheet" href="CSS.css">
-	<script src="Bootstrap4/BS4/js/jquery.min.js"></script>
-	<script src="Bootstrap4/BS4/js/popper.min.js"></script>
-	<script src="Bootstrap4/BS4/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="style/bootstrap-rtl.min.css">
+	<link rel="stylesheet" href="style/global.css">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
+<nav class="navbar navbar-expand-sm sticky-top bg-navbar d-md-none" id="main-navbar-md">
+    <div class="row w-100">
+        <div class="col-4">
+            <a class="navbar-brand col-2" style="text-align: right" id="brand-md">
+                <img src="./img/logo-criticizing-2.png" class="rounded-circle" style="width: 40px;">
+                <span class="brand-navbar">
+                    سامانه انتقادات و پیشنهادات شهیدبهشتی
+                </span>
+            </a>
+        </div>
+        <div class="col-6"></div>
+        <div class="col-2 fa fa-bars text-right ml-auto mt-1"></div>
+    </div>
+
+</nav>
+
+
+<nav class="navbar navbar-expand-sm sticky-top bg-navbar d-none d-md-block" id="main-navbar">
+    <div class="row">
+        <div class="col-4">
+            <a class="navbar-brand col-2" style="text-align: right" id="brand">
+                <img src="./img/logo-criticizing-2.png" class="rounded-circle" style="width: 40px;">
+                <span class="brand-navbar">
+                    سامانه انتقادات و پیشنهادات شهیدبهشتی
+                </span>
+            </a>
+        </div>
+        <div class="col-8">
+            <ul class="d-flex justify-content-end " style="height: 100%">
+                <li class="p-2 nav-item-1" id="item1" onclick="makeItActive(this.id),exitFunction()">خروج</li>
+            </ul>
+        </div>
+    </div>
+
+</nav>
+
 	<div class="container">
 		 <form class="myfrm">
 		 	<div v-if="data.type==0" class="form-inline my-3">

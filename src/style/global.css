@@ -52,3 +52,21 @@
 .link-nav :hover{
   background-color: white;
 }
+.myfrm .col-sm-6 input  {
+  position: absolute;
+  right: 120px;
+}
+.myfrm .form-check-label{
+  position: relative;
+  left: 90px;
+  width: 360px;
+  margin: 0 !important;
+}
+@media (max-width: 767px){
+  .myfrm .col-sm-6 input {
+    position: static;
+  }
+}
+@media (max-width: 576px) {
+
+}
